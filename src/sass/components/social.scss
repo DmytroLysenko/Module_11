@@ -1,0 +1,41 @@
+.social {
+  height: 100%;
+  @extend %flex-center;
+
+  &__list {
+    @extend %list;
+    display: flex;
+  }
+
+  &__item {
+    width: 56px;
+    height: 56px;
+    background-color: $main-color-1;
+
+    &:not(:last-of-type) {
+      margin-right: 1px;
+    }
+  }
+
+  &__link {
+    @extend %link;
+    height: 100%;
+    @extend %flex-center;
+
+    &:hover,
+    &:focus {
+      background-color: $main-color-2;
+    }
+
+    &:hover .social__icon,
+    &:focus .social__icon {
+      fill: $text-color-light;
+    }
+  }
+
+  &__icon {
+    width: 50%;
+    height: 50%;
+    fill: $main-color-2;
+  }
+}

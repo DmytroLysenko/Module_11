@@ -2,5 +2,22 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import 'normalize.scss';
-@import 'base.scss';
+@import 'helpers/variables';
+@import 'normalize';
+@import 'helpers/fonts';
+@import 'helpers/placeholder';
+@import 'base';
+
+// // Components
+@import 'components/container';
+@import 'components/wrapper';
+@import 'components/banner';
+@import 'components/header';
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/page-welcome';
+@import 'components/section';
+@import 'components/services';
+@import 'components/team';
+@import 'components/social';
+@import 'components/footer';

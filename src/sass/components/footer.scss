@@ -1,0 +1,63 @@
+.footer {
+  &__inner {
+    @extend %flex-space-between;
+    border-top: 1px solid $footer-border-color;
+    padding: 10px 0;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__input {
+    padding: 0 0 0 12px;
+    border: 1px solid $input-border-color;
+    width: 230px;
+    height: 40px;
+
+    &::placeholder {
+      font-family: $main-font-family;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: $input-placeholder-color;
+    }
+  }
+
+  &__btn {
+    @extend %btn;
+    width: 150px;
+    height: 40px;
+    background-color: $main-color-3;
+    font-family: $title-font-family;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: $text-color-light;
+    text-transform: uppercase;
+  }
+}
+
+
+/*  Copyright */
+.copyright {
+  font-family: $title-font-family;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: $text-color-dark;
+
+  &__link {
+    text-decoration: none;
+    font-family: $title-font-family;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: $main-color-2;
+    text-decoration: none;
+  }
+}
+

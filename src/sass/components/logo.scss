@@ -1,0 +1,13 @@
+.logo {
+  @extend %link;
+  font-family: $title-font-family;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  color: $text-color-light;
+
+  &:hover,
+  &:focus {
+    color: $main-color-1;
+  }
+}

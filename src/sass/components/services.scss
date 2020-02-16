@@ -1,0 +1,52 @@
+.services {
+  @extend %list;
+  @extend %flex-space-between;
+  flex-wrap: wrap;
+  padding: 64px 0 0 0;
+
+  &__item {
+    width: 31.67%;
+    padding-left: 6.92%;
+    position: relative;
+
+    &:not(:nth-last-of-type(-n + 3)) {
+      margin-block-end: 102px;
+    }
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    fill: $main-color-3;
+  }
+
+  &__link {
+    @extend %link;
+
+    &:hover .services__icon,
+    &:focus .services__icon {
+      fill: $main-color-2;
+    }
+  }
+
+  &__name {
+    margin-bottom: 18px;
+    font-family: $title-font-family;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: $text-color-dark;
+    text-transform: uppercase;
+  }
+
+  &__about {
+    font-family: $main-font-family;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: $main-text-color;
+  }
+}
